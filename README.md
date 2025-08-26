@@ -2,7 +2,7 @@
 Este repositorio contiene un material explicativo e infográfico sobre la **Sociedad Colectiva** regulada por la **Ley de Sociedades Comerciales 19.550 (Argentina)**.  
 La información está organizada en un formato de exposición académica y adaptada para ser consultada a través de **GitHub Pages**.
 
-🔗 **Ver la versión online aquí:** [GitHub Pages - Sociedad Colectiva](https://usuario.github.io/repositorio/)  
+🔗 **Ver la versión online aquí:** [[GitHub Pages - Sociedad Colectiva](https://usuario.github.io/repositorio/) ](https://tiagoraminelli.github.io/Sociedad-Colectiva/) 
 *(Reemplazar con el link real de tu GitHub Pages)*
 
 ---
