@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sociedad Colectiva - Guía Completa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .section-fade {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .section-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .highlight-box {
+            background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .icon-bounce {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 53%, 80%, 100% {
+                transform: translate3d(0,0,0);
+            }
+            40%, 43% {
+                transform: translate3d(0,-10px,0);
+            }
+            70% {
+                transform: translate3d(0,-5px,0);
+            }
+            90% {
+                transform: translate3d(0,-2px,0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-6">
+                <div class="inline-block p-4 bg-white bg-opacity-20 rounded-full mb-4">
+                    <svg class="w-12 h-12 text-white icon-bounce" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+            </div>
+            <h1 class="text-5xl font-bold mb-4">Sociedad Colectiva</h1>
+            <p class="text-xl opacity-90 max-w-2xl mx-auto">Guía completa sobre constitución, aportes, responsabilidades y administración según la Ley 19.550</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-center space-x-8 py-4">
+                <a href="#constitucion" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Constitución</a>
+                <a href="#aportes" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Aportes</a>
+                <a href="#responsabilidad" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Responsabilidad</a>
+                <a href="#administracion" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Administración</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        
+        <!-- Constitución Section -->
+        <section id="constitucion" class="section-fade mb-16">
+            <div class="bg-white rounded-2xl shadow-xl p-8 card-hover">
+                <div class="flex items-center mb-6">
+                    <div class="bg-gradient-to-r from-blue-500 to-purple-600 p-3 rounded-full mr-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                            <path fill-rule="evenodd" d="M4 5a2 2 0 012-2v1a1 1 0 001 1h6a1 1 0 001-1V3a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3z"/>
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-800">1. Constitución de la Sociedad Colectiva</h2>
+                </div>
+                
+                <div class="prose max-w-none">
+                    <p class="text-gray-600 text-lg mb-6">La sociedad colectiva se constituye mediante un contrato social, que puede otorgarse por instrumento público o privado (art. 4). Este contrato debe inscribirse en el Registro Público de Comercio para que la sociedad tenga existencia legal frente a terceros.</p>
+                    
+                    <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl mb-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Elementos básicos del contrato social:</h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                                <span class="text-gray-700">Identificación de los socios</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                                <span class="text-gray-700">Aportes de cada socio</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                                <span class="text-gray-700">Actividad u objeto social</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                                <span class="text-gray-700">Domicilio y plazo de duración</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                                <span class="text-gray-700">Razón social</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-xl">
+                        <div class="flex items-start">
+                            <div class="text-2xl mr-3">👉</div>
+                            <div>
+                                <p class="text-gray-700"><strong>Punto clave:</strong> En la sociedad colectiva, los socios aparecen directamente vinculados a la identidad de la empresa. El artículo 126 de la Ley 19.550 exige que la razón social esté integrada con el nombre de uno, varios o todos los socios.</p>
+                                <p class="text-gray-600 mt-2">Si no figuran todos, se utiliza "y compañía" o "& Cía.", además de "Sociedad Colectiva" o "S.C."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aportes Section -->
+        <section id="aportes" class="section-fade mb-16">
+            <div class="bg-white rounded-2xl shadow-xl p-8 card-hover">
+                <div class="flex items-center mb-6">
+                    <div class="bg-gradient-to-r from-green-500 to-teal-600 p-3 rounded-full mr-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"/>
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-800">2. Aportes de los Socios</h2>
+                </div>
+                
+                <div class="prose max-w-none">
+                    <p class="text-gray-600 text-lg mb-6">El aporte de los socios es indispensable para la existencia de la sociedad. La Ley 19.550 establece en su artículo 1 que todos los socios deben realizar un aporte.</p>
+                    
+                    <div class="grid md:grid-cols-3 gap-6 mb-6">
+                        <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl text-center">
+                            <div class="text-4xl mb-3">💰</div>
+                            <h3 class="font-semibold text-gray-800 mb-2">Dinero</h3>
+                            <p class="text-gray-600 text-sm">Capital monetario para el funcionamiento de la sociedad</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-xl text-center">
+                            <div class="text-4xl mb-3">🏢</div>
+                            <h3 class="font-semibold text-gray-800 mb-2">Bienes</h3>
+                            <p class="text-gray-600 text-sm">Activos tangibles e intangibles</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-xl text-center">
+                            <div class="text-4xl mb-3">👨‍💼</div>
+                            <h3 class="font-semibold text-gray-800 mb-2">Industria</h3>
+                            <p class="text-gray-600 text-sm">Trabajo personal y conocimientos especializados</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-orange-50 to-red-50 p-6 rounded-xl">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3">Características importantes:</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start space-x-2">
+                                <span class="text-orange-500 mt-1">•</span>
+                                <span>Los aportes determinan la proporción de participación en utilidades y pérdidas</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="text-orange-500 mt-1">•</span>
+                                <span>Como los socios responden ilimitadamente, el aporte inicial es menos relevante</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="text-orange-500 mt-1">•</span>
+                                <span>Todos los socios quedan sujetos al mismo régimen de responsabilidad</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Responsabilidad Section -->
+        <section id="responsabilidad" class="section-fade mb-16">
+            <div class="bg-white rounded-2xl shadow-xl p-8 card-hover">
+                <div class="flex items-center mb-6">
+                    <div class="bg-gradient-to-r from-red-500 to-pink-600 p-3 rounded-full mr-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"/>
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-800">3. Responsabilidad de los Socios</h2>
+                </div>
+                
+                <div class="prose max-w-none">
+                    <p class="text-gray-600 text-lg mb-6">El punto más característico de la sociedad colectiva es la responsabilidad de los socios. Según el artículo 125 de la Ley 19.550, todos los socios responden en forma <strong>subsidiaria, ilimitada y solidaria</strong> por las obligaciones sociales.</p>
+                    
+                    <div class="grid md:grid-cols-3 gap-6 mb-6">
+                        <div class="bg-gradient-to-br from-red-50 to-pink-50 p-6 rounded-xl">
+                            <div class="text-3xl mb-3 text-center">🔄</div>
+                            <h3 class="font-bold text-gray-800 mb-3 text-center">Subsidiaria</h3>
+                            <p class="text-gray-600 text-sm text-center">Primero se reclama a la sociedad, luego a los socios</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-orange-50 to-red-50 p-6 rounded-xl">
+                            <div class="text-3xl mb-3 text-center">♾️</div>
+                            <h3 class="font-bold text-gray-800 mb-3 text-center">Ilimitada</h3>
+                            <p class="text-gray-600 text-sm text-center">Responden con todo su patrimonio personal</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-xl">
+                            <div class="text-3xl mb-3 text-center">🤝</div>
+                            <h3 class="font-bold text-gray-800 mb-3 text-center">Solidaria</h3>
+                            <p class="text-gray-600 text-sm text-center">Cualquier acreedor puede exigir la totalidad a un solo socio</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-xl mb-6">
+                        <div class="flex items-start">
+                            <div class="text-2xl mr-3">⚠️</div>
+                            <div>
+                                <p class="text-gray-700 font-semibold">Advertencia importante:</p>
+                                <p class="text-gray-600 mt-2">Cualquier pacto que intente limitar esta responsabilidad carece de validez frente a terceros. Cada socio compromete no solo su aporte inicial, sino todos sus bienes presentes y futuros.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-gray-50 to-slate-50 p-6 rounded-xl">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3 highlight-box">Consecuencias prácticas:</h3>
+                        <p class="text-gray-700">La sociedad colectiva es un tipo altamente riesgoso en términos patrimoniales, ya que cada socio compromete no solo su aporte inicial, sino todos sus bienes presentes y futuros.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Administración Section -->
+        <section id="administracion" class="section-fade mb-16">
+            <div class="bg-white rounded-2xl shadow-xl p-8 card-hover">
+                <div class="flex items-center mb-6">
+                    <div class="bg-gradient-to-r from-indigo-500 to-purple-600 p-3 rounded-full mr-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"/>
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-800">4. Administración de la Sociedad</h2>
+                </div>
+                
+                <div class="prose max-w-none">
+                    <p class="text-gray-600 text-lg mb-6">La administración de la sociedad colectiva está regulada en los artículos 127 a 130 de la Ley 19.550. El contrato social debe establecer cómo se administra la sociedad.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-gradient-to-br from-indigo-50 to-blue-50 p-6 rounded-xl">
+                            <h3 class="font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="text-2xl mr-2">📋</span>
+                                Reglas de Administración
+                            </h3>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-indigo-500 mt-1 text-sm">▶</span>
+                                    <span class="text-sm">Si nada se dice, cualquier socio puede administrar (art. 127)</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-indigo-500 mt-1 text-sm">▶</span>
+                                    <span class="text-sm">Si se asigna a varios sin reglas, todos pueden actuar por separado</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-indigo-500 mt-1 text-sm">▶</span>
+                                    <span class="text-sm">Si deben obrar conjuntamente, ninguno puede actuar solo</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-xl">
+                            <h3 class="font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="text-2xl mr-2">⚖️</span>
+                                Remoción y Renuncia
+                            </h3>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-purple-500 mt-1 text-sm">▶</span>
+                                    <span class="text-sm">Pueden ser removidos por mayoría en cualquier momento</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-purple-500 mt-1 text-sm">▶</span>
+                                    <span class="text-sm">Salvo pacto que exija justa causa (art. 129)</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-purple-500 mt-1 text-sm">▶</span>
+                                    <span class="text-sm">Pueden renunciar, pero responden por daños si es intempestiva</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-cyan-50 to-blue-50 p-6 rounded-xl">
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl mr-3">💡</span>
+                            <h3 class="text-lg font-semibold text-gray-800">Punto clave sobre la administración</h3>
+                        </div>
+                        <p class="text-gray-700">Los administradores pueden ser socios o terceros, y su gestión debe estar claramente definida en el contrato social para evitar conflictos y garantizar el buen funcionamiento de la sociedad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary Card -->
+        <section class="section-fade">
+            <div class="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-2xl shadow-xl p-8 text-white">
+                <div class="text-center mb-6">
+                    <div class="inline-block p-4 bg-white bg-opacity-20 rounded-full mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"/>
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4">Resumen Ejecutivo</h2>
+                    <p class="text-xl opacity-90">La sociedad colectiva es una forma societaria de alto riesgo pero gran flexibilidad</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                        <h3 class="font-bold mb-3 text-lg">✅ Ventajas</h3>
+                        <ul class="space-y-2 text-sm opacity-90">
+                            <li>• Constitución simple y flexible</li>
+                            <li>• Administración directa por los socios</li>
+                            <li>• Aportes diversos (dinero, bienes, industria)</li>
+                            <li>• Confianza reflejada en la razón social</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                        <h3 class="font-bold mb-3 text-lg">⚠️ Riesgos</h3>
+                        <ul class="space-y-2 text-sm opacity-90">
+                            <li>• Responsabilidad ilimitada y solidaria</li>
+                            <li>• Compromiso de todo el patrimonio personal</li>
+                            <li>• Exposición pública en la razón social</li>
+                            <li>• Riesgo compartido entre todos los socios</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">© 2024 Guía de Sociedad Colectiva - Basado en la Ley 19.550</p>
+            <p class="text-gray-500 text-sm mt-2">Material educativo sobre derecho societario argentino</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections with fade animation
+        document.querySelectorAll('.section-fade').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-purple-600', 'font-semibold');
+                link.classList.add('text-gray-700');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('text-gray-700');
+                    link.classList.add('text-purple-600', 'font-semibold');
+                }
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9756bf2a00db69a7',t:'MTc1NjI0NzE0NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
